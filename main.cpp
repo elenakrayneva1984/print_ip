@@ -32,7 +32,6 @@ void print_ip(const string& data)
 {
     cout << data << endl;
 }
-
 /// @brief 
 /// @tparam T 
 /// @tparam type 
@@ -81,8 +80,17 @@ static void print_ip(const std::tuple<Types...>& tuple)
     std::apply(PrintTuple<Types...>, tuple); 
 }
 
-/// @brief 
-/// @return 
+/**
+ * @brief Entry point
+ *
+ * Execution of the program
+ * starts here.
+ *
+ * @param argc Number of arguments
+ * @param argv List of arguments
+ *
+ * @return Program exit status
+ */
 int main()
 {
     try
