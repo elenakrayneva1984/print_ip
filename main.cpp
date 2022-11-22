@@ -106,7 +106,7 @@ int main()
         print_ip( std::list<short>{400, 300, 200, 100} ); 
         print_ip( std::make_tuple(123, 456, 789, 0) );
         //std::tuple<std::string, std::string, std::string> tStr{"abc", "def", "gij"};
-       //print_ip(tStr);
+        //print_ip(tStr);
     }
     catch(const std::exception &e)
     {
