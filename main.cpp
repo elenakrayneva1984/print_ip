@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ *
+ * Methods for printing ip addresses represented in different ways.
+ */
 #include <cassert>
 #include <type_traits>
 #include <vector>
@@ -11,6 +16,10 @@
 
 using namespace std;
 
+
+/**
+ * @brief template Prints for int type out contents of an ip address represented.
+ */
 /// @brief 
 /// @tparam T 
 /// @tparam type 
@@ -25,13 +34,19 @@ void print_ip(T data){
     }
     cout<<endl;
 }
-
+/**
+ *  @brief Prints out contents of an ip address represented as a string.
+ */
 /// @brief 
 /// @param data 
 void print_ip(const string& data)
 {
     cout << data << endl;
 }
+
+/**
+ * @brief template Prints for is std::vector<int> or std::list<short> type out contents of an ip address represented.
+ */
 /// @brief 
 /// @tparam T 
 /// @tparam type 
@@ -47,7 +62,9 @@ void print_ip(T container){
     }
     cout << endl;
 }
-
+/**
+ * @brief template Prints for tuple type out contents of an ip address represented.
+ */
 /// @brief 
 /// @tparam TypeFirst 
 /// @tparam ...Types 
@@ -85,9 +102,6 @@ static void print_ip(const std::tuple<Types...>& tuple)
  *
  * Execution of the program
  * starts here.
- *
- * @param argc Number of arguments
- * @param argv List of arguments
  *
  * @return Program exit status
  */
